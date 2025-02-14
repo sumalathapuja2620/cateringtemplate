@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            border: 0px solid white;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            display: flex;
+            padding: 1.5%;
+            justify-content: space-between;
+        }
+        .n1{
+            display: flex;
+            gap: 40px;
+        }
+        a{
+            color: black;
+            letter-spacing: 2px;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 1rem;
+        }
+        .main{
+            background-image: url(images/main.jpg);
+            width: 100%;
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        h1{
+            color: gray;
+            font-size: 1.8rem;
+            letter-spacing: 0.3rem;
+        }
+        .section1{
+            box-shadow: 0px 1.5px 1px 0px rgb(241, 240, 240);
+            padding: 50px;
+            display: flex;
+            margin: 2%;
+            margin-left: 8%;
+            margin-right: 6%;
+            gap: 5px;
+        }
+        .section1>div{
+            flex-basis: 50%;
+        }
+        img{
+            height: 100vh;
+            width: 90%;
+        }
+        .s1{
+            display: flex;
+            flex-direction: column;
+            gap: 40px 0px;
+        }
+        b{
+            font-size: 2rem;
+            font-weight: 100;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        p{
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        .s2{
+            font-weight: 100;
+            font-size: 1.1rem;
+            color: grey;
+        }
+        .s3{
+            display: flex;
+            flex-direction: column;
+            gap: 50px 0px;
+        }
+        strong{
+            font-size: 1.1rem;
+            font-weight: 100;
+            letter-spacing: 5px;
+        }
+        .s4{
+            font-size: 1rem;
+            font-weight: 100;
+            color: grey;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin: 6%;
+            margin-left: 9%;
+        }
+        .c1{
+            font-size: 1rem;
+        }
+        input{
+            box-shadow: 0px 1px 1px 0px grey;
+            border: none;
+            width: 100%;
+            padding: 2%;
+        }
+        button{
+            background-color: rgb(189, 186, 186);
+            border: none;
+            padding: 0.9%;
+            width: 15%;
+        }
+        button:hover{
+            background-color: rgb(196, 187, 187);
+            color: black;
+        }
+        .footer{
+            background-color: rgb(240, 235, 235);
+            padding: 3.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div><a href="#catering">Gourmet au Catering</a></div>
+        <div class="n1">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="main" id="catering">
+            <h1>Le Catering</h1>
+    </div>
+    <div class="section1" id="about">
+        <div><img src="images/img1.jpg" alt=""></div>
+        <div class="s1">
+            <b>About Catering</b>
+            <p style="text-align: center;">Tradition since 1889</p>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            <p class="s2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <div class="section1" id="menu">
+        <div class="s3">
+            <h1 style="color: black; text-align: center; letter-spacing: 4px; font-size: 2.5rem; font-weight: 100;">Our Menu</h1>
+            <div><strong>Bread Basket</strong><br><br><p class="s4">Assortment of fresh baked fruit breads and muffins 5.50</p></div>
+            <div><strong>Honey Almond Granola with Fruits</strong><br><br><p class="s4">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p></div>
+            <div><strong>Belgian Waffle</strong><br><br><p class="s4">Vanilla flavored batter with malted flour 7.50</p></div>
+            <div><strong>Scrambled eggs</strong><br><br><p class="s4">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p></div>
+            <div><strong>Blueberry Pancakes</strong><br><br><p class="s4">With syrup, butter and lots of berries 8.50</p></div>
+        </div>
+        <div><img src="images/img2.jpg" alt=""></div>
+    </div>
+    <div class="contact" id="contact">
+        <h1 style="color: black; letter-spacing: 4px; font-size: 2.5rem; font-weight: 100;">Contact</h1>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+        <p class="c1">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <p style="color: rgb(71, 85, 104); font-size: 1.2rem;">Catering Service, 42nd Living St, 43043 New York, NY</p>
+        <p class="c1">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <form action="" method="post">
+            <input type="text"  name="name" placeholder="Name"><br><br>
+            <input type="text"  name="hmp" placeholder="How Many People"><br><br>
+            <input type="datetime-local"  name="date" placeholder="16-11-2020 08:00 PM"><br><br>
+            <input type="text"  name="require" placeholder="Message\Special requirements"><br><br><br>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div style="text-align: center; font-size: 0.9rem;">Powered by <a href="">sumalatha</a></div>
+    </div>
+</body>
+</html>
